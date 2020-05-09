@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carousel Image slider</title>
+<style type="text/css">
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s slider infinite;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="slider">
+		<figure>
+            <img src="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg" >
+			<img src="https://tinyjpg.com/images/social/website.jpg">
+			<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg" >
+			<img src="https://www.personal.psu.edu/kbl5192/jpg.jpg">
+			<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg" >
+		</figure>
+	</div>
+	<script src="/reload/reload.js"></script> 
+</body>
+</html>
