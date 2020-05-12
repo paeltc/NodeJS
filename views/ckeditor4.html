@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor 4</title>
+</head>
+
+<body>
+    <textarea id="idDemo" name="demo"></textarea>
+    <input type="button" value="Get Data" onclick="myFunction()" />
+    <script>
+        function myFunction() {
+            var content = CKEDITOR.instances.idDemo.getData();
+            alert(content);
+        }
+    </script>
+
+    <!--CKEditor 4-->
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace('demo');</script>
+
+    <!-- Nodemon reload-->
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>

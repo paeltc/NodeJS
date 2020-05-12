@@ -24,6 +24,10 @@ app.get('/registerPage', function (req, res) {
 app.get('/waitButWhy', function (req, res) {
     res.sendFile(path.join(publicDir, '/waitButWhy.html'))
 })
+
+app.get('/ckeditor4', function (req, res) {
+  res.sendFile(path.join(publicDir, '/ckeditor4.html'))
+})
  
 app.set('port', process.env.PORT || 3000)
 var server = http.createServer(app)
